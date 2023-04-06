@@ -4,6 +4,12 @@ namespace Summator.UnitTests
 {
     public class SummatorTests
     {
+        [SetUp]
+        public void SetUp() 
+        {
+            Console.WriteLine(DateTime.Now);
+        }
+
         [Test]
         public void Test_Summator_SumTwoPositiveNumber()
         {

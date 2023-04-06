@@ -8,16 +8,29 @@ namespace Summator
 {
     public class Summator
     {
-        public static int Sum(int[] arr)
+        public static long Sum(int[] arr)
         {
-            int sum = 0;
+            long sum = 0;
             
             for (int i = 0; i < arr.Length; i++)
             {
                 sum += arr[i];
             }
+
             return sum;
         }
 
+        public static double Avarage(double[] arr)
+        {
+            double sum = 0;
+
+            for (int i = 0; i < arr.Length; i++)
+            {
+                sum += arr[i];
+            }
+            sum = sum / arr.Length;
+
+            return sum; 
+        }
     }
 }
